@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Ant and the Grasshopper - Kenya Kids Book Launch</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Comic+Neue:wght@400;700&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Comic+Neue:wght@400;700&family=Caveat:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -15,12 +18,18 @@
         }
 
         :root {
-            --primary: #8B0000; /* Dark red */
-            --secondary: #000000; /* Black */
-            --accent: #FFD700; /* Gold */
-            --light: #FFFFFF; /* White */
-            --earth: #8B4513; /* Earthy brown */
-            --sun: #FF6B35; /* Sun orange */
+            --primary: #8B0000;
+            /* Dark red */
+            --secondary: #000000;
+            /* Black */
+            --accent: #FFD700;
+            /* Gold */
+            --light: #FFFFFF;
+            /* White */
+            --earth: #8B4513;
+            /* Earthy brown */
+            --sun: #FF6B35;
+            /* Sun orange */
         }
 
         body {
@@ -144,7 +153,7 @@
             display: flex;
             justify-content: center;
         }
-        
+
         .book {
             width: 350px;
             height: 500px;
@@ -152,34 +161,34 @@
             transform-style: preserve-3d;
             transform: rotateY(-15deg) rotateX(5deg);
         }
-        
+
         .book-front {
             position: absolute;
             width: 100%;
             height: 100%;
             background: linear-gradient(145deg, #FFE4B5 0%, #F5DEB3 30%, #DEB887 100%);
             border-radius: 8px;
-            box-shadow: 
+            box-shadow:
                 0 0 0 3px #8B4513,
-                0 10px 30px rgba(0,0,0,0.3),
-                inset 0 1px 0 rgba(255,255,255,0.3);
+                0 10px 30px rgba(0, 0, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.3);
             overflow: hidden;
             display: flex;
             flex-direction: column;
             padding: 25px;
             box-sizing: border-box;
         }
-        
+
         .title-main {
             font-family: 'Fredoka One', cursive;
             font-size: 2.2em;
             color: #2F4F2F;
             text-align: center;
             margin: 15px 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
             line-height: 1.1;
         }
-        
+
         .subtitle {
             font-family: 'Caveat', cursive;
             font-size: 1.1em;
@@ -189,14 +198,14 @@
             margin-bottom: 20px;
             font-weight: 600;
         }
-        
+
         .emoji-section {
             text-align: center;
             font-size: 3em;
             margin: 15px 0;
-            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
         }
-        
+
         .illustration-area {
             flex: 1;
             background: radial-gradient(ellipse at center, #98FB98 0%, #90EE90 30%, #32CD32 100%);
@@ -204,9 +213,9 @@
             margin: 10px 0;
             position: relative;
             overflow: hidden;
-            box-shadow: inset 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         .grass {
             position: absolute;
             bottom: 0;
@@ -214,21 +223,19 @@
             height: 40px;
             background: linear-gradient(to top, #228B22, #32CD32);
         }
-        
+
         .grass::before {
             content: '';
             position: absolute;
             bottom: 0;
             width: 100%;
             height: 20px;
-            background: repeating-linear-gradient(
-                90deg,
-                #228B22 0px,
-                #32CD32 3px,
-                #228B22 6px
-            );
+            background: repeating-linear-gradient(90deg,
+                    #228B22 0px,
+                    #32CD32 3px,
+                    #228B22 6px);
         }
-        
+
         .sun {
             position: absolute;
             top: 15px;
@@ -239,7 +246,7 @@
             border-radius: 50%;
             box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
         }
-        
+
         .launch-banner {
             background: linear-gradient(45deg, #FF6B35, #F7931E);
             color: white;
@@ -249,11 +256,11 @@
             border-radius: 8px;
             font-weight: bold;
             font-size: 0.9em;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
             transform: rotate(-1deg);
         }
-        
+
         .author {
             font-family: 'Caveat', cursive;
             font-size: 1.3em;
@@ -261,9 +268,9 @@
             text-align: center;
             font-weight: 700;
             margin-top: auto;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
         }
-        
+
         .decorative-border {
             position: absolute;
             top: 10px;
@@ -275,7 +282,7 @@
             pointer-events: none;
             opacity: 0.3;
         }
-        
+
         .corner-flourish {
             position: absolute;
             width: 25px;
@@ -283,7 +290,7 @@
             border: 2px solid #8B4513;
             opacity: 0.4;
         }
-        
+
         .corner-flourish.top-left {
             top: 15px;
             left: 15px;
@@ -291,7 +298,7 @@
             border-bottom: none;
             border-radius: 8px 0 0 0;
         }
-        
+
         .corner-flourish.top-right {
             top: 15px;
             right: 15px;
@@ -299,7 +306,7 @@
             border-bottom: none;
             border-radius: 0 8px 0 0;
         }
-        
+
         .corner-flourish.bottom-left {
             bottom: 15px;
             left: 15px;
@@ -307,7 +314,7 @@
             border-top: none;
             border-radius: 0 0 0 8px;
         }
-        
+
         .corner-flourish.bottom-right {
             bottom: 15px;
             right: 15px;
@@ -325,7 +332,7 @@
             font-size: 3.8rem;
             font-weight: bold;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
             background: linear-gradient(45deg, var(--light), var(--accent));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -341,12 +348,12 @@
         }
 
         .event-details {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             border-radius: 15px;
             padding: 2rem;
             margin: 2rem 0;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .detail-item {
@@ -395,15 +402,15 @@
         }
 
         .btn-secondary {
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.2);
             color: white;
-            border: 2px solid rgba(255,255,255,0.3);
+            border: 2px solid rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(10px);
         }
 
         .btn:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
         }
 
         .btn-primary:hover {
@@ -419,7 +426,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.9);
+            background-color: rgba(0, 0, 0, 0.9);
             backdrop-filter: blur(5px);
             overflow: auto;
         }
@@ -435,7 +442,7 @@
             background: white;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 30px 60px rgba(0,0,0,0.7);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
             display: flex;
             flex-direction: column;
         }
@@ -518,7 +525,7 @@
             background: white;
             border: 1px solid #ddd;
             border-radius: 8px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -619,7 +626,7 @@
             align-items: center;
             justify-content: center;
             transition: all 0.3s;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
         }
 
         .nav-arrow:hover {
@@ -663,14 +670,14 @@
             top: 50%;
             transform: translateY(-50%);
             border: 3px solid var(--accent);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.7);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
         }
 
         .rsvp-content h2 {
             font-size: 3rem;
             margin-bottom: 1.5rem;
             color: var(--accent);
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .rsvp-content p {
@@ -683,7 +690,7 @@
             font-size: 4rem;
             color: var(--accent);
             margin-bottom: 1rem;
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
         }
 
         /* Footer */
@@ -738,11 +745,11 @@
             .container {
                 gap: 3rem;
             }
-            
+
             .launch-title {
                 font-size: 3.2rem;
             }
-            
+
             .book {
                 width: 320px;
                 height: 450px;
@@ -755,15 +762,15 @@
                 text-align: center;
                 gap: 3rem;
             }
-            
+
             .book-cover {
                 margin: 0 auto;
             }
-            
+
             .detail-item {
                 justify-content: center;
             }
-            
+
             .buttons {
                 justify-content: center;
             }
@@ -773,41 +780,41 @@
             .launch-title {
                 font-size: 2.8rem;
             }
-            
+
             .launch-subtitle {
                 font-size: 1.3rem;
             }
-            
+
             .book {
                 width: 280px;
                 height: 400px;
             }
-            
+
             .title-main {
                 font-size: 1.8em;
             }
-            
+
             .subtitle {
                 font-size: 1em;
             }
-            
+
             .emoji-section {
                 font-size: 2.5em;
             }
-            
+
             .modal-content {
                 max-height: 95vh;
             }
-            
+
             .book-container {
                 height: 380px;
             }
-            
+
             .page-content {
                 max-width: 220px;
                 font-size: 0.95rem;
             }
-            
+
             .chapter-title {
                 font-size: 1.3rem;
             }
@@ -824,17 +831,17 @@
             .karibu-text {
                 font-size: 3rem;
             }
-            
+
             .nav-arrow {
                 width: 40px;
                 height: 40px;
                 font-size: 1.2rem;
             }
-            
+
             .nav-arrow.left {
                 left: -20px;
             }
-            
+
             .nav-arrow.right {
                 right: -20px;
             }
@@ -846,55 +853,55 @@
                 gap: 10px;
                 padding: 10px;
             }
-            
+
             .launch-title {
                 font-size: 2.3rem;
             }
-            
+
             .book {
                 width: 240px;
                 height: 340px;
             }
-            
+
             .title-main {
                 font-size: 1.5em;
             }
-            
+
             .subtitle {
                 font-size: 0.9em;
             }
-            
+
             .emoji-section {
                 font-size: 2em;
                 margin: 10px 0;
             }
-            
+
             .author {
                 font-size: 1.1em;
             }
-            
+
             .btn {
                 padding: 1rem 1.8rem;
                 font-size: 1.1rem;
                 width: 100%;
             }
-            
+
             .buttons {
                 gap: 1rem;
             }
-            
+
             .book-container {
                 height: 320px;
             }
-            
+
             .page {
                 padding: 1.5rem;
             }
-            
+
             .chapter-title {
                 font-size: 1.2rem;
             }
-            
+
             .nav-btn {
                 padding: 0.7rem 1.5rem;
                 font-size: 1rem;
@@ -915,23 +922,24 @@
             .karibu-text {
                 font-size: 2.5rem;
             }
-            
+
             .nav-arrow {
                 width: 35px;
                 height: 35px;
                 font-size: 1rem;
             }
-            
+
             .nav-arrow.left {
                 left: -15px;
             }
-            
+
             .nav-arrow.right {
                 right: -15px;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Background curves -->
     <div class="bg-curves">
@@ -940,7 +948,7 @@
         <div class="bg-curve"></div>
         <div class="bg-curve"></div>
     </div>
-    
+
     <!-- Header with branding -->
     <div class="header-bar">
         <div class="sponsor-logo">
@@ -969,18 +977,19 @@
                         <div class="corner-flourish top-right"></div>
                         <div class="corner-flourish bottom-left"></div>
                         <div class="corner-flourish bottom-right"></div>
-                        
+
                         <div class="title-main">The Ant &<br>The Grasshopper</div>
                         <div class="subtitle">A Tale of Preparation and Play</div>
                         <div class="emoji-section">🐜 🦗</div>
-                        
+
                         <div class="illustration-area">
                             <div class="sun"></div>
                             <div class="grass"></div>
                         </div>
-                        
-                        <div class="launch-banner">🇰🇪 KENYA KIDS BOOK LAUNCH 🇰🇪</div>
                         <div class="author">James Mwangi</div>
+
+                        <div class="launch-banner"> KENYA KIDS BOOK LAUNCH </div>
+
                     </div>
                 </div>
             </div>
@@ -988,7 +997,7 @@
             <div class="content">
                 <h1 class="launch-title">African Fable Reimagined</h1>
                 <p class="launch-subtitle">Join us for the exclusive launch of this beloved classic retelling</p>
-                
+
                 <div class="event-details">
                     <div class="detail-item">
                         <span class="detail-icon">📅</span>
@@ -1041,16 +1050,22 @@
                             <div class="page page-left" id="leftPage">
                                 <div class="page-content">
                                     <div class="chapter-title">Chapter 1: The Harvest Season</div>
-                                    <p>In a field beneath the warm African sun, there lived a hardworking ant named <span class="gold-text">Amani</span>. Every day, she would gather grains and store them carefully in her underground home.</p>
-                                    <p>"The <span class="black-text">dry season</span> will come," she would say, "and we must be <span class="gold-text">prepared</span>."</p>
+                                    <p>In a field beneath the warm African sun, there lived a hardworking ant named
+                                        <span class="gold-text">Amani</span>. Every day, she would gather grains and
+                                        store them carefully in her underground home.</p>
+                                    <p>"The <span class="black-text">dry season</span> will come," she would say, "and
+                                        we must be <span class="gold-text">prepared</span>."</p>
                                 </div>
                                 <div class="page-number">1</div>
                             </div>
                             <div class="page page-right" id="rightPage">
                                 <div class="page-content">
                                     <div class="chapter-title">The Grasshopper's Song</div>
-                                    <p>Not far away, <span class="gold-text">Gikuyu</span> the grasshopper spent his days singing beautiful melodies. He watched Amani work but preferred to <span class="black-text">enjoy the moment</span>.</p>
-                                    <p>"Why work so hard?" he called out. "The harvest is plentiful, and life is <span class="gold-text">wonderful</span>!"</p>
+                                    <p>Not far away, <span class="gold-text">Gikuyu</span> the grasshopper spent his
+                                        days singing beautiful melodies. He watched Amani work but preferred to <span
+                                            class="black-text">enjoy the moment</span>.</p>
+                                    <p>"Why work so hard?" he called out. "The harvest is plentiful, and life is <span
+                                            class="gold-text">wonderful</span>!"</p>
                                 </div>
                                 <div class="page-number">2</div>
                             </div>
@@ -1089,7 +1104,7 @@
                 </div>
             </div>
             <div class="footer-text">
-                "The Ant and the Grasshopper" is part of an educational initiative to promote African storytelling 
+                "The Ant and the Grasshopper" is part of an educational initiative to promote African storytelling
                 through modern technology. This project supports creative talent in Kenya.
             </div>
             <div class="copyright">
@@ -1101,7 +1116,7 @@
     <script>
         let currentPage = 0;
         const totalPages = 6;
-        
+
         const pageContents = [
             {
                 left: {
@@ -1169,7 +1184,7 @@
 
             if (currentPage < pageContents.length) {
                 const content = pageContents[currentPage];
-                
+
                 leftPage.innerHTML = `
                     <div class="page-content">
                         <div class="chapter-title">${content.left.title}</div>
@@ -1177,7 +1192,7 @@
                     </div>
                     <div class="page-number">${content.left.number}</div>
                 `;
-                
+
                 rightPage.innerHTML = `
                     <div class="page-content">
                         <div class="chapter-title">${content.right.title}</div>
@@ -1220,10 +1235,10 @@
         }
 
         // Close modal when clicking outside
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             const bookModal = document.getElementById('bookModal');
             const rsvpModal = document.getElementById('rsvpModal');
-            
+
             if (event.target === bookModal) {
                 closePreview();
             }
@@ -1236,4 +1251,5 @@
         updatePage();
     </script>
 </body>
+
 </html>
